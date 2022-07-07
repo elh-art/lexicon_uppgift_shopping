@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --main-color-1: #20d3c2;
+  --main-color-2: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* TOP-PART: */
+
+.navbar {
+  background: var(--main-color-1);
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 30px;
+}
+
+.container upper {
+  display: flex;
+}
+
+.upperleftside select {
+  border: none;
+  background: var(--main-color-1);
+  color: var(--main-color-2);
+  cursor: pointer;
+} 
+
+.upperrightside {
+  display: flex;
+  align-items: center;
+  height: 41px;
+}
+
+.uppermenu {
+  display: flex;
+  margin-top: revert;
+}
+
+.uppermenu li {
+  display: flex;
+  align-items: center;
+  height: 41px;
+  padding: 0 16px 0 16px;
+  border-right: 2px solid var(--main-color-2);
+}
+
+.uppermenu li a {
+  text-decoration: none;
+  color: var(--main-color-2);
+}
+
+.uppericons { 
+  margin-left: 14px;
+}
+
+.uppericons i {
+  padding: 0 4px 0 4px;
+  color: var(--main-color-2);
+}
+
+/* MID-PART: */
+
+.shopping {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 106px;
+}
+
+.shopping i {
+  margin: 0 10px 0 50px;
+  padding: 0 4px 0 4px;
+  color: #000;
+  font-size: 22px;
+}
+
+.fa-random {
+  font-weight: 300;
+}
+
+.shopping a:nth-child(3) {
+  height: 22px;
+}
+
+.shoppingamount {
+  position: relative;
+  top: -35px;
+  right: -11px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: var(--main-color-1);
+  color: var(--main-color-2);
+  font-size: 11px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.shopping .priceofgoods {
+  font-size: 16px;
+}
+
+/* LOWER-SECTION: */
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background-color: #eee;
+}
+
+.heroImg {
+  margin-bottom: 38px;
+}
+
+.herobanner p {
+  width: 380px;
+  margin-bottom: 44px;
+  font-size: 16px;
+}
+
+.shopBtn {
+  width: 155px;
+  height: 55px;
+  border-radius: 27.5px;
+  border: none;
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+  font-size: 18px;
+}
