@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;700&family=Jost&display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;50;700&family=Roboto:wght@400;500;700&family=Jost&display&display=swap');
 
 :root {
   --font-play: 'Play', sans-serif;
   --font-roboto: 'Roboto', sans-serif;
   --font-jost: 'Jost', sans-serif;
   --font-weight-regular: 400;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
 
   --color-white: #fff;
@@ -15,6 +16,7 @@
   --color-instock: #64cb83;
   --color-outofstock: #fe4545;
   --color-theme: #20d3c2;
+  --color-theme-light: #edfcfa;
   --color-dark-theme: #0e153d;
 }
 
@@ -30,6 +32,42 @@
 
 body {
   font-family: var(--font-roboto);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-dark-theme);   
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.btn {
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  padding: 0.75rem 1.75rem;
+}
+
+.btn-white {
+  background-color: var(--color-white);
+  color: var(--color-theme);
+  border: none;
+}
+
+.btn-theme {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-white:hover,
+.btn-white:focus {
+    background-color: var(--color-dark-theme);
+    color: var(--color-white); 
+    border: none;  
+}
+
+.btn-special-offer {
+  padding: 0.45rem 1.3rem;
 }
 
 /* TOP-MENU: */
@@ -44,7 +82,7 @@ body {
 }
 
 .top-menu .site-settings select {
-  margin-right: 10px;
+  margin-right: 0.75rem;
   border: none;
   background: var(--color-theme);
   color: var(--color-white);
@@ -56,7 +94,6 @@ body {
 } 
 
 .top-menu .links a {
-  font-size: 14px;
   text-decoration: none;
   color: var(--color-white);
   padding: 14px 10px;
@@ -102,6 +139,7 @@ body {
     border-right: none;
     padding-left: 25px;
     width: 350px;
+    outline: none;
   }
   
   .mid-menu .container .search-bar .dropdown button {
@@ -111,17 +149,17 @@ body {
       border-radius: 0;
       color: var(--color-dark-theme);
       border: 2px solid var(--color-gray);
+      padding-right: 1rem;
     }
 
     .mid-menu .container .search-bar .dropdown button:focus {
       box-shadow: none;
-      border: 3px solid #000;
     }
 
     .mid-menu .container .search-bar .dropdown button i {
       color: var(--color-instock);
       font-weight: 700;
-      margin-left: 20px;
+      margin-left: 10px;
     }
 
   .mid-menu .container .search-bar .magnifier {
@@ -160,7 +198,7 @@ body {
       margin-left: 2px;
     }
 
-  .mid-menu .container .shopping .shopping-bag {
+  .mid-menu .container .shopping .shopping-height {
     height: 22px;
   }
 
@@ -182,29 +220,123 @@ body {
   font-size: 16px;
 }
 
-/* HERO-SECTION: */
-
-.hero {
-  height: 600px;
-  background-color: #eee;
+.main-menu {
+  border-top: 1px solid var(--color-gray);  
 }
 
-.heroImg {
-  margin-bottom: 38px;
+  .main-menu #main-menu-dropdown {
+    border-radius: 0;
+    padding: 0.75rem;
+  }
+
+  .main-menu .fa-chevron-down {
+    padding-left: 2.5rem;
+  }
+
+/* SHOWCASE-SECTION: */
+
+.showcase {
+  background-color: var(--color-light-gray);
 }
 
-.herobanner p {
-  width: 380px;
-  margin-bottom: 44px;
-  font-size: 16px;
+  .showcase .container .showcaseImg {
+    margin-bottom: 38px;
+  }
+
+  .showcase .container .showcase_content p {
+    width: 380px;
+    margin-bottom: 44px;
+    font-size: 16px;
+  }
+
+/* WEBSHOP-INFO: */
+
+.webshop-info .container-fluid .infobox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 2rem;
+  width: 400px;
+  height: 140px;
+  border-radius: 8px;
+  margin: 7.5rem 1rem;
+  background-color: var(--color-theme-light);
 }
 
-.shopBtn {
-  width: 155px;
-  height: 55px;
-  border-radius: 27.5px;
-  border: none;
-  background-color: var(--color-white);
-  color: var(--color-theme);
-  font-size: 18px;
+
+  .webshop-info .container-fluid .infobox h3 {  
+    font-size: 1rem;     
+    font-weight: var(--font-weight-medium);
+  }
+
+  .webshop-info .container-fluid .infobox p {
+    font-weight: var(--font-weight-regular);
+  }
+
+  .webshop-info .container-fluid .infobox:hover {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+  }
+
+/* SHOP-BY-CATEGORY: */
+
+.shop-by-category {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
+
+  .shop-by-category h1 {
+    font-family: var(--font-play);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .shop-by-category h1 span {
+    color: var(--color-theme);
+  }
+
+/* SHOPPING-GRID: */
+
+.grid-item1 { grid-area: Men; }
+.grid-item2 { grid-area: Women; }
+.grid-item3 { grid-area: Kids; }
+.grid-item4 { grid-area: Shoes; }
+.grid-item5 { grid-area: Hats; }
+.grid-item6 { grid-area: Sunglass; }
+.grid-item7 { grid-area: Watches; }
+
+.shopping-grid .grid {
+  display: grid;
+  grid-template-areas:
+  'Men Women Women Kids Kids'
+  'Shoes Shoes Hats Kids Kids'
+  'Shoes Shoes Sunglass Sunglass Watches';
+  gap: 10px;
+  height: 660px;
+  padding: 0;
+  margin-top: 45px;
+}
+
+  .grid > div {
+    background-color: var(--color-gray);
+    position: relative;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+  
+  .grid > div:hover {
+    border: 2px solid var(--color-dark-theme)
+  }
+  
+  .grid div span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 50%;
+    background-color: var(--color-dark-theme);
+    color: var(--color-theme);
+    border-radius: 0 5px 0 5px;
+    font-size: 1rem;
+  }

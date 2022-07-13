@@ -47,10 +47,10 @@
         <div class="search-bar d-flex">
           <input type="text" placeholder="Search products...">
           <div class="dropdown">
-            <button class="btn btn-secondary " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary " type="button" id="searchbar-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
               Categories <i class="fa-light fa-angle-down"></i>
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <ul class="dropdown-menu" aria-labelledby="searchbar-dropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -65,8 +65,10 @@
             <span>My account</span>
           </a>
           <a href="#"><i class="fal fa-heart"></i></a>
-          <a href="#"><i class="fa-light fa-random"></i></a>
-          <a class="shopping-bag" href="#"><i class="fal fa-shopping-bag">
+          <a class="shopping-height" href="#"><i class="fa-light fa-random">
+            <div class="shoppingamount">0</div> 
+          </i></a>
+          <a class="shopping-height" href="#"><i class="fal fa-shopping-bag">
             <div class="shoppingamount">0</div>
           </i></a> 
           <div class="priceofgoods">0.00 SEK</div>
@@ -74,20 +76,88 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container d-flex justify-content-between">
-        <div class="herobanner d-flex flex-column justify-content-center">
-          <img class="heroImg" src="./images/Shopping is_MOR.png" alt="">
-          <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
-          <button class="shopBtn">SHOP NOW</button>
+    <div class="main-menu">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="dropdown">
+          <button class="btn btn-theme" type="button" id="main-menu-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-regular fa-bars"></i>
+            <span>Browse Categories</span> 
+            <i class="fa-regular fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="main-menu-dropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </div>
-        <div class="heropicture">
-          <img src="images/Banner-thumb.png" alt="two people in fashionable clothes">
-        </div>
+        <button class="btn btn-theme btn-special-offer" type="submit">SPECIAL OFFER</button>
       </div>
+    </div>
 
+    <section class="showcase">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="showcase_content">
+          <img class="showcaseImg" src="./images/Shopping is_MOR.png" alt="Picture with text: shopping is more">
+          <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
+          <button class="btn btn-white">SHOP NOW</button>
+        </div>
+        <img src="images/Banner-thumb.png" alt="two people in fashionable clothes">
+      </div>
     </section>
 
+    <div class="webshop-info">
+      <div class="container-fluid d-flex justify-content-evenly align-items-center">
+        <div class="infobox">
+          <img src="images/free-shipping-icon.svg" class="me-3" alt="a free shipping icon">
+          <div>
+            <h3><strong>Free shipping</strong></h3>
+            <p>For a local customer, we provide free shipping facility</p>
+          </div>
+        </div>
+        <div class="infobox">
+          <img src="images/clock-icon.svg" class="me-3" alt="a clock icon">
+          <div>
+              <h3><strong>27/7 support</strong></h3>
+              <p>For any inquiry, we are available 24 hours every day</p>
+          </div>
+        </div>
+        <div class="infobox">
+          <img src="images/online-payment-icon.svg" class="me-3" alt="an online payment icon">
+          <div>
+              <h3><strong>Online payment</strong></h3>
+              <p>You can pay quickly and easily with our online payment system</p>
+          </div>
+        </div>
+        <div class="infobox">
+          <img src="images/free-delivery-icon.svg" class="me-3" alt="a free delivery icon">
+          <div>
+              <h3><strong>Free delivery</strong></h3>
+              <p>For a local customer, we provide free shipping facility</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-by-category">
+      <h1>SHOP BY <span> CATEGORY </span></h1>
+      <img src="images/wave-line.svg" alt="waved line">
+      <p class="my-2">We always try to give you the best product within a fast and reliable way</p>
+    </div>
+
+    <div class="shopping-grid">
+      <div class="container grid"> 
+        <div class="grid-item1"> <span>Men</span> </div>
+        <div class="grid-item2"> <span>Women</span> </div>
+        <div class="grid-item3"> <span>Kids</span> </div>  
+        <div class="grid-item4"> <span>Shoes</span> </div>
+        <div class="grid-item5"> <span>Hats</span> </div>
+        <div class="grid-item6"> <span>Sunglasses</span> </div>
+        <div class="grid-item7"> <span>Watches</span> </div>
+      </div>
+    </div>
+
+
+    <div style="height: 500px;"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
