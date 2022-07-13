@@ -159,7 +159,7 @@ body {
     .mid-menu .container .search-bar .dropdown button i {
       color: var(--color-instock);
       font-weight: 700;
-      margin-left: 10px;
+      margin-left: 5px;
     }
 
   .mid-menu .container .search-bar .magnifier {
