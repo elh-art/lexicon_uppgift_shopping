@@ -359,3 +359,34 @@ body {
     border-radius: 0 5px 0 5px;
     font-size: 1rem;
   }
+
+/* NEW-ARRIVALS: */
+
+.arrival-container{
+  margin: 0 14px;
+}
+
+.less-than, .greater-than {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: 3px solid var(--color-gray);
+}
+
+  .fa-less-than, .fa-greater-than {
+    position: absolute;
+    top: 8px;
+    color: var(--color-gray);
+    transform: scaleX(0.5);
+    font-weight: 300;
+  }
+
+  .less-than:hover, .greater-than:hover {
+    background-color: var(--color-theme);
+    border-color: var(--color-theme);
+    color: var(--color-white);
+  }
