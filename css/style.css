@@ -274,17 +274,36 @@ body {
     font-weight: var(--font-weight-regular);
   }
 
+  .webshop-info .container-fluid .infobox .infobox-container {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+  
+  .infobox .infobox-container .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  
   .webshop-info .container-fluid .infobox:hover {
     background-color: var(--color-theme);
     color: var(--color-white);
   }
+
+    .infobox:hover .infobox-container .img-top {
+        display: inline;
+    }
 
 /* SHOP-BY-CATEGORY: */
 
 .shop-by-category {
   width: 50%;
   margin: 0 auto;
-  text-align: center;
 }
 
   .shop-by-category h1 {
@@ -315,14 +334,14 @@ body {
   gap: 10px;
   height: 660px;
   padding: 0;
-  margin-top: 45px;
+  margin: 45px 0 114px 0;
 }
 
   .grid > div {
     background-color: var(--color-gray);
     position: relative;
-    font-size: 30px;
     border-radius: 5px;
+    font-size: 1.875rem;
   }
   
   .grid > div:hover {
