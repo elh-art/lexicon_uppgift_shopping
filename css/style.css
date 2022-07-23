@@ -372,7 +372,6 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 65px;
   width: 65px;
   border-radius: 50%;
@@ -409,17 +408,16 @@ body {
   width: 100%;
   border-radius: 10px;
   background-color: var(--color-dark-theme);
-  z-index: 1;
   opacity: 0.8;
 }
 
   .box-arrival h3 {
     position: absolute;
-    top: 25px;
-    left: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 25px;
+    left: 25px;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -440,21 +438,16 @@ body {
     padding-left: 25px;
   }
 
-  .product-info {
-    position: relative;
-  }
-  
   .box-arrival .product-name {
     display: flex;
     align-items: center;
-    background-color: var(--color-dark-theme);
-    color: var(--color-white);
     height: 52px;
     padding-left: 25px;
     margin: 0;
+    background-color: var(--color-dark-theme);
+    color: var(--color-white);
     font-size: 18px;
     border-radius: 0 0 10px 10px;
-    z-index: 99;
   }
 
   .box-arrival .not-visible {
@@ -465,18 +458,15 @@ body {
   .box-arrival .fashion {
     border: 1px solid var(--color-white);
     padding: 1px 10px;
-    z-index: 99;
   }
   
   .box-arrival .old-price {
     text-decoration: line-through;
-    z-index: 99;
   }
 
   .box-arrival .new-price {
     font-size: 1.5rem;
     color: var(--color-theme);
-    z-index: 99;
   }
 
   .flying-tab {
@@ -485,12 +475,11 @@ body {
     flex-direction: column;
     top: 15px;
     right: 15px;
-    text-align: center;
-    background-color: var(--color-light-gray);
-    border-radius: 25px;
     padding: 17px 6px;
+    background-color: var(--color-light-gray);
+    text-align: center;
+    border-radius: 25px;
     color: var(--color-dark-gray);
-    z-index: 99;
   }
 
   .flying-tab i {
@@ -552,9 +541,9 @@ body {
 .mini-box {
   width: 13px;
   height: 13px;
+  margin: 10px 3px;
   background-color: var(--color-gray);
   border-radius: 2px;
-  margin: 10px 3px;
 }
 
 /* 30%off */
@@ -573,9 +562,9 @@ body {
   }
 
 .thirty-off .thirty-off_content {
-  background-color: var(--color-theme);
   width: 260px;
   height: 420px;
+  background-color: var(--color-theme);
 }
 
 .thirty-off-sidepanel {
