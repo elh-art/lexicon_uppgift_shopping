@@ -679,12 +679,7 @@ body {
   'Bexim Rosimo';
   gap: 10px;
   margin: 45px 0 110px 0;
-}
-
-.box-topsellers {
-  position: relative;
-  border-radius: 10px;
-  background-color: var(--color-light-gray);
+  padding: 0;
 }
 
   .grid-topsell1 {
@@ -710,7 +705,81 @@ body {
     padding: 20px;
     z-index: 0; 
   }
-/* 
-  .box-arrival:hover .corp-logo {
-    z-index: -1;
-  } */
+
+/* SUBSCRIBE-SECTION */
+
+.subscribe-box {
+  background-color: var(--color-white-gray);
+}
+
+.subscribe-box .container {
+  padding: 0;
+  height: 310px;
+}
+
+.subscribe-box .container .showcase_content {
+  width: 450px;
+}
+
+.subscribe-box .container .showcase_content .shop-by-category {
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+  .subscribe-box .container .showcase_content .shop-by-category h1 {
+    font-size: 2.25rem;
+    margin: 0;
+  }
+
+  .subscribe-box .container .showcase_content p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+.grey-box {
+  height: 100%;
+  width: 50%;
+  background-color: var(--color-grayish);
+}
+
+.subscribe-box .embeded-subscribe {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid var(--color-light-gray);
+  background-color: var(--color-white);
+  color: var(--color-dark-gray);
+}
+
+  .subscribe-box input {
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+
+  .subscribe-box button {
+    height: 42px;
+    margin: 2px;
+    padding: 0 20px;
+  }
+
+  /* FOOTER */
+
+  footer {
+    background-color: var(--color-dark-theme);
+    color: var(--color-white);
+    height: 80px;
+  }
+
+  footer .container {
+    padding: 0;
+  }
+
+    footer p {
+      margin: 0;
+    }
+
+    .available-payments img {
+      margin-left: 10px;
+    }
