@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;50;700&family=Roboto:wght@400;500;700&family=Jost&display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;500;700&family=Roboto:wght@400;500;700&family=Jost&display&display=swap');
 
 :root {
   --font-play: 'Play', sans-serif;
@@ -183,11 +183,16 @@ body {
 }
 
   .mid-menu .container .shopping a {
-    margin: 0 10px 0 15px;
+    margin-left: 25px;
     padding: 0 4px 0 4px;
     color: var(--color-dark-theme);
     font-size: 22px;
     text-decoration: none;
+  }
+ 
+  .mid-menu .container .shopping .my-account span {
+    width: 100px;
+    margin-left: 5px;
   }
 
   .mid-menu .container .shopping a:hover {
@@ -201,24 +206,32 @@ body {
 
   .mid-menu .container .shopping .shopping-height {
     height: 22px;
+    position: relative;
+    width: 33px;
   }
 
-.shoppingamount {
-  position: relative;
-  top: -35px;
-  right: -11px;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  background-color: var(--color-theme);
-  color: var(--color-white);
-  font-size: 11px;
-  text-align: center;
-  line-height: 18px;
-}
+    .shopping-height i {
+      position: absolute;
+      bottom: 0;
+    }   
+
+    .shoppingamount {
+      position: absolute;
+      top: -8px;
+      right: -11px;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background-color: var(--color-theme);
+      color: var(--color-white);
+      font-size: 8px;
+      text-align: center;
+      line-height: 18px;
+    }
 
 .shopping .priceofgoods {
   font-size: 16px;
+  margin-left: 5px;
 }
 
 .main-menu {
@@ -318,13 +331,13 @@ body {
 
 /* SHOPPING-GRID: */
 
-.grid-item1 { grid-area: Men; }
-.grid-item2 { grid-area: Women; }
-.grid-item3 { grid-area: Kids; }
-.grid-item4 { grid-area: Shoes; }
-.grid-item5 { grid-area: Hats; }
-.grid-item6 { grid-area: Sunglass; }
-.grid-item7 { grid-area: Watches; }
+.grid-item1 { grid-area: Men; overflow: hidden;}
+.grid-item2 { grid-area: Women; overflow: hidden;}
+.grid-item3 { grid-area: Kids; overflow: hidden;}
+.grid-item4 { grid-area: Shoes; overflow: hidden;}
+.grid-item5 { grid-area: Hats; overflow: hidden;}
+.grid-item6 { grid-area: Sunglass; overflow: hidden;}
+.grid-item7 { grid-area: Watches; overflow: hidden;}
 
 .shopping-grid .grid {
   display: grid;
@@ -345,20 +358,32 @@ body {
     font-size: 1.875rem;
   }
   
-  .grid > div:hover {
-    border: 2px solid var(--color-dark-theme)
-  }
-  
-  .grid div span {
+  .grid .grid-pack {
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 0;
     padding: 10px;
     width: 50%;
+    height: 70px;
     background-color: var(--color-dark-theme);
     color: var(--color-theme);
     border-radius: 0 5px 0 5px;
     font-size: 1rem;
+    transition: 500ms ease-in-out;
+  }
+
+    .grid-pack span {
+      font-weight: var(--font-weight-medium);
+    }
+
+    .grid-pack h3 {
+      font-size: 0.8em;
+      color: var(--color-dark-gray);
+      margin: 5px 0;
+    }
+
+  .grid > div:hover .grid-pack {
+    bottom: 0;
   }
 
 /* NEW-ARRIVALS: */
@@ -366,6 +391,7 @@ body {
 .arrival-container{
   margin: 36px 14px 20px 14px;
   padding: 0;
+  gap: 10px;
 }
 
 .less-than, .greater-than {
@@ -397,18 +423,21 @@ body {
   border-radius: 10px;
   background-color: var(--color-light-gray);
   height: 400px;
+  overflow: hidden;
+  color: var(--color-white);
 }
 
 .box-dark {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  transform: translateY(1000px);
   border-radius: 10px;
   background-color: var(--color-dark-theme);
   opacity: 0.8;
+  transition: 500ms ease-in-out;
 }
 
   .box-arrival h3 {
@@ -452,49 +481,59 @@ body {
     color: var(--color-white);
     font-size: 18px;
     border-radius: 0 0 10px 10px;
-  }
-
-  .box-arrival .not-visible {
-    display: none;
-    color: var(--color-white);
+    transition: 500ms ease-in-out;
   }
 
   .box-arrival .fashion {
+    position: absolute;
     border: 1px solid var(--color-white);
     padding: 1px 10px;
+    left: 25px;
+    bottom: -100px;
+    transition: 500ms ease-in-out;
   }
   
   .box-arrival .old-price {
+    position: absolute;
+    left: 25px;
     text-decoration: line-through;
+    bottom: -100px;
+    transition: 500ms ease-in-out;
   }
 
   .box-arrival .new-price {
+    position: absolute;
+    left: 25px;
     font-size: 1.5rem;
     color: var(--color-theme);
+    bottom: -100px;
+    transition: 500ms ease-in-out;
   }
 
   .flying-tab {
-    display: none;
+    display: flex;
     position: absolute;
     flex-direction: column;
-    top: 15px;
+    top: 1000px;
     right: 15px;
     padding: 17px 6px;
     background-color: var(--color-light-gray);
     text-align: center;
     border-radius: 25px;
-    color: var(--color-dark-gray);
+    color: var(--color-dark-gray);    
+    transition: 500ms ease-in-out;
   }
 
   .five-stars {
-    display: none;
+    display: flex;
     position: absolute;
     flex-direction: row;
-    bottom: 6px;
+    bottom: -666px;
     right: 26px;
     padding: 17px 6px;
     color: var(--color-theme);
     font-size: 20px;
+    transition: 500ms ease-in-out;
   }
 
   .flying-tab i {
@@ -509,7 +548,7 @@ body {
   /* HOVER-ARRIVALS */
 
     .box-arrival:hover .box-dark {
-      display: inline;
+      transform: translateY(0);
       z-index: 1;
     }
 
@@ -522,30 +561,28 @@ body {
     }
 
     .box-arrival:hover .flying-tab {
-      display: flex;
       z-index: 2;
+      top: 25px;
     }
 
     .box-arrival:hover .five-stars {
-      display: flex;
+      bottom: 6px;
       z-index: 2;
     }
     
-    .box-arrival:hover .not-visible {
-      display: flex;
-      position: absolute;
-      bottom: 0px;
-      left: 25px;
-      background-color: transparent;
-      z-index: 2;
-    }
-
       .box-arrival:hover .old-price {
         bottom: 45px;
+        z-index: 2;
+      }
+
+      .box-arrival:hover .new-price {
+        bottom: 0px;
+        z-index: 2;
       }
 
       .box-arrival:hover .fashion {
         bottom: 77px;
+        z-index: 2;
       }
 
       .box-arrival:hover .product-name {

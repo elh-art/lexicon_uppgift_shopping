@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +14,11 @@
     <nav class="top-menu bg-theme">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="site-settings d-flex">
-          <select name="language" id="">ENG
+          <select name="language">
             <option value="language">ENG</option>
             <option value="language">SWE</option>
           </select>
-          <select name="currency" id="">SEK
+          <select name="currency">
             <option value="currency">SEK</option>
             <option value="currency">EUR</option>
           </select>
@@ -42,7 +42,7 @@
     <header class="mid-menu">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="company-logo">
-           <h1>KEN<img src="images/Path 8.png" alt="KenKata logo">KATA</h1>
+           <h1>KEN<img src="images/Path_8.png" alt="KenKata logo">KATA</h1>
         </div>
         <div class="search-bar d-flex">
           <input type="text" placeholder="Search products...">
@@ -59,19 +59,19 @@
           <button class="magnifier bg-theme p-0"><i class="fa-light fa-magnifying-glass position-relative"></i></button>
         </div>
 
-        <div class="shopping d-flex justify-content-end align-items-center">
-          <a href="#">
+        <div class="shopping d-flex align-items-center justify-content-between">
+          <a class="my-account d-flex align-items-center" href="#">
             <i class="fa-light fa-user"></i>
             <span>My account</span>
           </a>
           <a href="#"><i class="fal fa-heart"></i></a>
           <a class="shopping-height" href="#"><i class="fa-light fa-random">
-            <div class="shoppingamount">0</div> 
+            <small class="shoppingamount">0</small> 
           </i></a>
           <a class="shopping-height" href="#"><i class="fal fa-shopping-bag">
-            <div class="shoppingamount">0</div>
+            <small class="shoppingamount">0</small>
           </i></a> 
-          <div class="priceofgoods">0.00 SEK</div>
+          <div class="priceofgoods">$0.00</div>
         </div>
       </div>
     </header>
@@ -94,23 +94,23 @@
       </div>
     </div>
 
-    <section class="showcase">
+    <div class="showcase">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="showcase_content">
-          <img class="showcaseImg" src="./images/Shopping is_MOR.png" alt="Picture with text: shopping is more">
+          <img class="showcaseImg" src="./images/Shopping_is_MOR.png" alt="Picture with text: shopping is more">
           <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
           <button class="btn btn-white">SHOP NOW</button>
         </div>
         <img src="images/Banner-thumb.png" alt="two people in fashionable clothes">
       </div>
-    </section>
+    </div>
 
     <div class="webshop-info">
       <div class="container-fluid d-flex justify-content-evenly align-items-center">
         <div class="infobox">
           <div class="infobox-container">
             <img src="images/free-shipping-icon.svg" class="me-3" alt="a free shipping icon">
-            <img class="img-top" src="images/free-shipping-icon_white.svg" class="me-3" alt="a free shipping icon">
+            <img class="img-top me-3" src="images/free-shipping-icon_white.svg" alt="a free shipping icon">
           </div>
           <div>
             <h3><strong>Free shipping</strong></h3>
@@ -120,7 +120,7 @@
         <div class="infobox">
           <div class="infobox-container">
             <img src="images/clock-icon.svg" class="me-3" alt="a clock icon">
-            <img class="img-top" src="images/clock-icon_white.svg" class="me-3" alt="a clock icon">
+            <img class="img-top me-3" src="images/clock-icon_white.svg" alt="a clock icon">
           </div>
           <div>
               <h3><strong>27/7 support</strong></h3>
@@ -130,7 +130,7 @@
         <div class="infobox">
           <div class="infobox-container">
             <img src="images/online-payment-icon.svg" class="me-3" alt="an online payment icon">
-            <img class="img-top" src="images/online-payment-icon_white.svg" class="me-3" alt="an online payment icon">
+            <img class="img-top me-3" src="images/online-payment-icon_white.svg" alt="an online payment icon">
           </div>
           <div>
               <h3><strong>Online payment</strong></h3>
@@ -140,7 +140,7 @@
         <div class="infobox">
           <div class="infobox-container">
             <img src="images/free-delivery-icon.svg" class="me-3" alt="a free delivery icon">
-            <img class="img-top" src="images/free-delivery-icon_white.svg" class="me-3" alt="a free delivery icon">
+            <img class="img-top me-3" src="images/free-delivery-icon_white.svg" alt="a free delivery icon">
           </div>
           <div>
               <h3><strong>Free delivery</strong></h3>
@@ -158,13 +158,48 @@
 
     <div class="shopping-grid d-flex justify-content-center">
       <div class="container grid"> 
-        <div class="grid-item1"> <span>Men</span> </div>
-        <div class="grid-item2"> <span>Women</span> </div>
-        <div class="grid-item3"> <span>Kids</span> </div>  
-        <div class="grid-item4"> <span>Shoes</span> </div>
-        <div class="grid-item5"> <span>Hats</span> </div>
-        <div class="grid-item6"> <span>Sunglasses</span> </div>
-        <div class="grid-item7"> <span>Watches</span> </div>
+        <div class="grid-item1">
+          <div class="grid-pack">
+            <span>Men</span> 
+            <h3>18 products</h3> 
+          </div> 
+        </div>
+        <div class="grid-item2">
+          <div class="grid-pack">
+            <span>Women</span> 
+            <h3>18 products</h3>
+          </div>
+        </div>
+        <div class="grid-item3"> 
+          <div class="grid-pack">
+            <span>Kids</span> 
+            <h3>18 products</h3>
+          </div>
+        </div>  
+        <div class="grid-item4">
+          <div class="grid-pack">
+            <span>Shoes</span> 
+            <h3>18 products</h3> 
+          </div>
+        </div>
+        <div class="grid-item5">
+          <div class="grid-pack">
+            <span>Hats</span> 
+            <h3>18 products</h3> 
+          </div>
+        </div>
+        <div class="grid-item6">
+          <div class="grid-pack">
+            <span>Sunglasses</span> 
+            <h3>18 products</h3> 
+          </div>
+        </div>
+        <div class="grid-item7">
+          <div class="grid-pack">
+            <span>Watches</span> 
+            <h3>18 products</h3> 
+          </div>
+        </div>
       </div>
     </div>
 
@@ -185,9 +220,9 @@
             <img src="images/NewArrival1.png" alt="New arrival sleved top">
             <div class="product-info">
               <p class="product-name">Blue silk flare sleeved top</p>
-              <p class="not-visible fashion">Fashion</p>
-              <p class="not-visible old-price">$220.00</p>
-              <p class="not-visible new-price">$190.00</p>
+              <p class="fashion">Fashion</p>
+              <p class="old-price">$220.00</p>
+              <p class="new-price">$190.00</p>
             </div> 
             <div class="flying-tab">
               <i class="fa-solid fa-circle"></i>
@@ -203,9 +238,9 @@
           <img src="images/NewArrival2.png" alt="New arrival mens coat">
           <div class="product-info">
             <p class="product-name">New look men's coat</p>
-            <p class="not-visible fashion">Fashion</p>
-            <p class="not-visible old-price">$220.00</p>
-            <p class="not-visible new-price">$190.00</p>
+            <p class="fashion">Fashion</p>
+            <p class="old-price">$220.00</p>
+            <p class="new-price">$190.00</p>
           </div>
           <div class="flying-tab">
             <i class="fa-solid fa-circle"></i>
@@ -221,9 +256,9 @@
           <img src="images/NewArrival3.png" alt="New arrival girls shirt">
           <div class="product-info">
             <p class="product-name">Circle pattern girls shirt</p>
-            <p class="not-visible fashion border">Fashion</p>
-            <p class="not-visible old-price">$220.00</p>
-            <p class="not-visible new-price">$190.00</p>
+            <p class="fashion border">Fashion</p>
+            <p class="old-price">$220.00</p>
+            <p class="new-price">$190.00</p>
           </div>
           <div class="flying-tab">
             <i class="fa-solid fa-circle"></i>
@@ -245,7 +280,7 @@
       <div class="mini-box third-mini"></div>
     </div>
 
-    <section class="thirty-off">
+    <div class="thirty-off">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="thirty-off_content d-flex flex-column align-items-center justify-content-center">
           <img class="thirty-offImg" src="./images/30OFF.png" alt="Picture with text: 30% off">
@@ -257,7 +292,7 @@
           <button class="btn btn-white">LEARN MORE</button>
         </div>
       </div>
-    </section>
+    </div>
 
 
     <div class="shop-by-category text-center">
@@ -277,9 +312,9 @@
             <img src="images/featured1.png" alt="New arrival sleved top">
             <div class="product-info">
               <p class="product-name">Winter collection for women's</p>
-              <p class="not-visible fashion">Fashion</p>
-              <p class="not-visible old-price">$220.00</p>
-              <p class="not-visible new-price">$190.00</p>
+              <p class="fashion">Fashion</p>
+              <p class="old-price">$220.00</p>
+              <p class="new-price">$190.00</p>
             </div> 
             <div class="flying-tab">
               <i class="fa-solid fa-circle"></i>
@@ -302,9 +337,9 @@
           <img src="images/NewArrival1.png" alt="New arrival mens coat">
           <div class="product-info">
             <p class="product-name">New look men's coat</p>
-            <p class="not-visible fashion">Fashion</p>
-            <p class="not-visible old-price">$220.00</p>
-            <p class="not-visible new-price">$190.00</p>
+            <p class="fashion">Fashion</p>
+            <p class="old-price">$220.00</p>
+            <p class="new-price">$190.00</p>
           </div>
           <div class="flying-tab">
             <i class="fa-solid fa-circle"></i>
@@ -327,9 +362,9 @@
           <img src="images/featured3.png" alt="New arrival girls shirt">
           <div class="product-info">
             <p class="product-name">Red women's blazer full</p>
-            <p class="not-visible fashion border">Fashion</p>
-            <p class="not-visible old-price">$220.00</p>
-            <p class="not-visible new-price">$190.00</p>
+            <p class="fashion border">Fashion</p>
+            <p class="old-price">$220.00</p>
+            <p class="new-price">$190.00</p>
           </div>
           <div class="flying-tab">
             <i class="fa-solid fa-circle"></i>
@@ -367,19 +402,19 @@
         <div class="flash-sale-sidepanel position-absolute text-center end-0">
           <div class="time-balls d-flex justify-content-between align-items-center text-center">
             <div class="time-ball">
-              <h1>7</h1>
+              <h3>7</h3>
               <p>Days</p>
             </div>
             <div class="time-ball">
-              <h1>23</h1>
+              <h3>23</h3>
               <p>Hours</p>
             </div>
             <div class="time-ball">
-              <h1>46</h1>
+              <h3>46</h3>
               <p>Minutes</p>
             </div>
             <div class="time-ball">
-              <h1>12</h1>
+              <h3>12</h3>
               <p>Seconds</p>
             </div>
           </div>
@@ -402,9 +437,9 @@
             <img class="topsellers-img" src="images/Product_left.png" alt="Top sellers Product one">
             <div class="product-info">
               <p class="product-name">Men's denim shirts full</p>
-              <p class="not-visible fashion">Fashion</p>
-              <p class="not-visible old-price">$220.00</p>
-              <p class="not-visible new-price">$190.00</p>
+              <p class="fashion">Fashion</p>
+              <p class="old-price">$220.00</p>
+              <p class="new-price">$190.00</p>
             </div> 
             <div class="flying-tab">
               <i class="fa-solid fa-circle"></i>
@@ -427,9 +462,9 @@
           <img class="topsellers-img" src="images/Product_up.png" alt="Top sellers Product two">
           <div class="product-info">
             <p class="product-name">Women's leather bag and shoe</p>
-            <p class="not-visible fashion">Fashion</p>
-            <p class="not-visible old-price">$220.00</p>
-            <p class="not-visible new-price">$190.00</p>
+            <p class="fashion">Fashion</p>
+            <p class="old-price">$220.00</p>
+            <p class="new-price">$190.00</p>
           </div>
           <div class="flying-tab">
             <i class="fa-solid fa-circle"></i>
@@ -452,9 +487,9 @@
           <img class="topsellers-img" src="images/Product_down.png" alt="Top sellers Product three">
           <div class="product-info">
             <p class="product-name">New look men's sneakers</p>
-            <p class="not-visible fashion border">Fashion</p>
-            <p class="not-visible old-price">$220.00</p>
-            <p class="not-visible new-price">$190.00</p>
+            <p class="fashion border">Fashion</p>
+            <p class="old-price">$220.00</p>
+            <p class="new-price">$190.00</p>
           </div>
           <div class="flying-tab">
             <i class="fa-solid fa-circle"></i>
@@ -478,7 +513,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <div class="showcase_content">
           <div class="shop-by-category">
-            <h1>Subscribe <span> Now </span></h1>
+            <h2>Subscribe <span> Now </span></h2>
           </div>
           <p>Signup for awesome news about our new products and know our special discounts on products.</p>
           <div class="embeded-subscribe d-flex justify-content-between align-items-center">
