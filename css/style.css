@@ -19,6 +19,8 @@
   --color-theme-light: #edfcfa;
   --color-dark-theme: #0e153d;
   --color-grayish: #ccc;
+  --color-dark-background: #50546e;
+  --color-pure-grey: #777;
 }
 
 .bg-theme {
@@ -820,3 +822,28 @@ body {
     .available-payments img {
       margin-left: 10px;
     }
+
+ /* MY ACCOUNT SITE */
+
+ .above-form {
+  height: 7em;
+  background-color: var(--color-dark-background);
+  color: var(--color-theme);
+ }
+
+ .above-form .container {
+  height: 100%;
+ }
+
+ .above-form .container a {
+  text-decoration: none;
+  color: var(--color-theme);
+ }
+
+  .above-form .container a::after {
+    content: ' ';
+  }
+
+ .above-form .container h5 {
+   color: var(--color-white);
+  }
