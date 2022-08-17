@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="235" height="42" viewBox="0 0 235 42">
+  <g id="Facebook_login" data-name="Facebook login" transform="translate(-435 -856)">
+    <rect id="Rectangle_633" data-name="Rectangle 633" width="235" height="42" rx="6" transform="translate(435 856)" fill="#3b5998"/>
+    <path id="Facebook" d="M111.633,149H93.371A3.369,3.369,0,0,0,90,152.369v18.262A3.369,3.369,0,0,0,93.371,174h9.007l.015-8.934h-2.321a.548.548,0,0,1-.548-.546l-.011-2.88a.548.548,0,0,1,.548-.55h2.317v-2.783c0-3.229,1.972-4.987,4.853-4.987h2.364a.548.548,0,0,1,.548.548V156.3a.548.548,0,0,1-.547.548h-1.451c-1.567,0-1.87.744-1.87,1.837v2.409h3.442a.548.548,0,0,1,.544.612l-.341,2.88a.548.548,0,0,1-.544.483h-3.086L106.274,174h5.359A3.369,3.369,0,0,0,115,170.631V152.369A3.369,3.369,0,0,0,111.633,149Z" transform="translate(352.998 715)" fill="#fff"/>
+    <text id="Facebook-2" data-name="Facebook" transform="translate(553 882)" fill="#fff" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="-34.734" y="0">Facebook</tspan></text>
+  </g>
+</svg>

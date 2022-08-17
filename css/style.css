@@ -876,3 +876,74 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+  .signup-signin input {
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+    margin-top: 5px;
+  }
+
+  .signup-signin label span {
+    color: var(--color-theme);
+  }
+
+.signin .remember-me input {
+  margin: 0 16px 0 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+.signin .external-login-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.signin .external-login-header span {   
+  position: absolute;
+  top: -11px;
+  margin: 0;
+  padding: 0 3em;
+  background-color: var(--color-white-gray);
+  z-index: 1;
+}
+
+.signin .external-login-header .external-login-line {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-dark-gray);
+
+}
+
+.signin .external-login button {
+  height: 42px;
+  width: 235px;
+  background-repeat: none;
+  border: none;
+}
+
+  .signin .external-login .external-login-facebook button {
+    background-image: url(../images/facebook-login-button.svg);  
+  }
+
+  .signin .external-login .external-login-google button {
+    background-image: url(../images/google-login-button.svg);  
+  }
+
+.signup .card-titel-text {
+  color: var(--color-pure-grey);
+}
+
+.signup .privacy-policy {
+  font-weight: var(--font-weight-medium);
+}
+
+.signup .privacy-policy a,
+.signin .remember a {
+  text-decoration: none;
+  color: var(--color-theme);
+  opacity: 0.6;
+}
