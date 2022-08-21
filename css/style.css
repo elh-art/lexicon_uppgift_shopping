@@ -875,7 +875,48 @@ body {
 .signup-signin .password-input {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+
+  .signup-signin .name-input i,
+  .signup-signin .email-input i,
+  .signup-signin .password-input i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+  }
+
+  .signup-signin .input-control small {
+    position: absolute;
+    bottom: -1.5em;
+    left: 0;
+    font-size: 0.75em;
+    visibility: hidden;
+  }
+
+  .signup-signin .input-control.error small {
+    visibility: visible;
+    color: var(--color-outofstock);
+  }
+
+    .signup-signin .input-control.success input {   
+      border: 2px solid var(--color-instock); 
+    }
+
+    .signup-signin .input-control.success i.fa-check-circle {   
+      visibility: visible;
+      color: var(--color-instock);
+    }
+
+    .signup-signin .input-control.error input {    
+      border: 2px solid var(--color-outofstock);
+    }
+
+    .signup-signin .input-control.error i.fa-exclamation-circle {   
+      visibility: visible;
+      color: var(--color-outofstock);
+    }
 
   .signup-signin input {
     border: none;
