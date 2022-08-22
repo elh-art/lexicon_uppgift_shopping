@@ -870,17 +870,19 @@ body {
   padding: 30px;
 }
 
-.signup-signin .name-input,
-.signup-signin .email-input,
-.signup-signin .password-input {
+.signup-signin .input-control {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-  .signup-signin .name-input i,
-  .signup-signin .email-input i,
-  .signup-signin .password-input i {
+.signup-signin .input-control input:focus {
+  outline: none;
+  transform: translateY(-2px);
+  transition: 250ms ease-in-out;
+}
+
+.signup-signin .input-control i {
     position: absolute;
     top: 40px;
     right: 10px;
@@ -956,7 +958,6 @@ body {
   height: 2px;
   width: 100%;
   background-color: var(--color-dark-gray);
-
 }
 
 .signin .external-login button {
