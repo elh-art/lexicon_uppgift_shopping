@@ -103,23 +103,23 @@
 
   <section class="signup-signin form container d-flex justify-content-between">
 
-    <form class="signin d-flex flex-column" novalidate>
+    <form class="signin d-flex flex-column" onsubmit="validate(event)" novalidate>
       <h2 class="card-title mb-4">
         Login
       </h2>
       <div class="input-control email-input mb-4">
         <label for="email">Email address <span class="required">*</span></label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" autocomplete="off" onkeyup="validate(event)" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+        <small class="text-danger" id="email-error"></small>
       </div>
       <div class="input-control password-input mb-4">
         <label for="password">Password <span class="required">*</span></label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password" autocomplete="off" onkeyup="validate(event)" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+        <small class="text-danger" id="password-error"></small>
       </div>
       <button type="submit" class="btn btn-lg btn-theme mb-4">
         LOG IN
@@ -145,45 +145,45 @@
       </div>
     </form>
 
-    <form class="signup d-flex flex-column" novalidate>
+    <form class="signup d-flex flex-column" onsubmit="handleSignUp(event)" novalidate>
       <h2 class="card-title mb-4">
         Register
       </h2>
       <div class="card-titel-text mb-4">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easie</div>
       <div class="input-control name-input mb-4">
         <label for="firstname">Firstname <span class="required">*</span></label>
-        <input type="text" name="firstname" id="firstname" required>
+        <input type="text" name="firstname" id="firstname" autocomplete="off" onkeyup="validate(event)" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+        <small class="text-danger" id="firstname-error"></small>
       </div>
       <div class="input-control name-input mb-4">
         <label for="lastname">Lastname <span class="required">*</span></label>
-        <input type="text" name="lastname" id="lastname" required>
+        <input type="text" name="lastname" id="lastname" autocomplete="off" onkeyup="validate(event)" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+        <small class="text-danger" id="lastname-error"></small>
       </div>
       <div class="input-control email-input mb-4">
         <label for="email">Email address <span class="required">*</span></label>
-        <input type="email" name="email" id="emailSU" required>
+        <input type="email" name="email" id="email2" autocomplete="off" onkeyup="validate(event)" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+        <small class="text-danger" id="email2-error"></small>
       </div>
       <div class="input-control password-input mb-4">
         <label for="password">Password <span class="required">*</span></label>
-        <input type="password" name="password" id="passwordSU" required>
+        <input type="password" name="password" id="password2" autocomplete="off" onkeyup="validate(event)" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+        <small class="text-danger" id="password2-error"></small>
       </div>
       <div class="input-control password-input mb-4">
-        <label for="password2">Password check <span class="required">*</span></label>
-        <input type="password" name="password2" id="passwordSU2" required>
+        <label for="password-repeat">Password check <span class="required">*</span></label>
+        <input type="password" name="password-repeat" id="password-repeat" autocomplete="off" onkeyup="validate(event)" required>
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
-        <small>Error message</small>
+        <small class="text-danger" id="password-repeat-error"></small>
       </div>
       <div class="privacy-policy mb-4">
         Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#"> privacy policy.</a>

@@ -894,7 +894,7 @@ body {
     bottom: -1.5em;
     left: 0;
     font-size: 0.75em;
-    visibility: hidden;
+
   }
 
   .signup-signin .input-control.error small {
@@ -902,11 +902,11 @@ body {
     color: var(--color-outofstock);
   }
 
-    .signup-signin .input-control.success input {   
-      border: 2px solid var(--color-instock); 
+    .signup-signin .input-control.validated input {   
+      box-shadow: 2px 2px var(--color-instock); 
     }
 
-    .signup-signin .input-control.success i.fa-check-circle {   
+    .signup-signin .input-control.validated i.fa-check-circle {   
       visibility: visible;
       color: var(--color-instock);
     }
