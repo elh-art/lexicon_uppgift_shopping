@@ -915,11 +915,6 @@ body {
       border: 2px solid var(--color-outofstock);
     }
 
-    .signup-signin .input-control.error i.fa-exclamation-circle {   
-      visibility: visible;
-      color: var(--color-outofstock);
-    }
-
   .signup-signin input {
     border: none;
     padding: 7px;
