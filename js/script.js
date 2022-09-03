@@ -92,6 +92,7 @@ function validate(event) {
 
 function handleSignUp(event) {
   event.preventDefault()
+  event.target[5].children[0].classList.remove('d-none')
 
   if (isAllValidated(event, 5)) {
 
@@ -108,11 +109,9 @@ function handleSignUp(event) {
         body: json
       })
       .then(response => {
-        if (response.status === 400) {
-          document.getElementById('response-error').innerText = 'You must fill in all mandatory fields.'
-        }
         if (response.status === 409) {
-          document.getElementById('response-error').innerText = 'There is already a user with the same email address'
+          document.getElementById('response-error2').innerText = 'There is already a user with the same email address'
+          event.target[5].children[0].classList.add('d-none')
         }
         if (response.status === 200) {
           window.location.replace('account.html')
@@ -120,7 +119,8 @@ function handleSignUp(event) {
       }
      )
     } else {
-      document.getElementById('response-error').innerText = 'Not all validations tests passed, please correct your values'
+      document.getElementById('response-error2').innerText = 'Not all validations tests passed, please correct your values'
+      event.target[5].children[0].classList.add('d-none')
     }
   }
   
@@ -140,6 +140,7 @@ function isAllValidated(event, num) {
 
 function handleSignIn(event) {
   event.preventDefault()
+  event.target[2].children[0].classList.remove('d-none')
 
   if (isAllValidated(event, 2)) {
 
@@ -156,17 +157,34 @@ function handleSignIn(event) {
       .then(response => {
         if (response.status === 400) {
           document.getElementById('response-error').innerText = 'Ops! Email and password not matching.'
+          event.target[2].children[0].classList.add('d-none')
         }
         if (response.status === 200) {
-          // window.location.replace('account.html')
-          console.log('you just logged in')
+          window.location.replace('account.html')
         }
-      }
-     )
+      })
+      .then(data => {
+        console.log(data)
+        sessionStorage.setItem('token', data)
+      })
+     
     } else {
       document.getElementById('response-error').innerText = 'Not all validations tests passed, please correct your values'
+      event.target[2].children[0].classList.add('d-none')
     }
 }
+
+function handleSignOut() {
+  sessionStorage.removeItem('token')
+  window.location.replace('myaccount.html')
+}
+
+function isSignedIn() {
+  // let token = sessionStorage.getItem('token')
+  // if(token === null || token === undefined)
+  // window.location.replace('myaccount.html')
+}
+
 // document.className.includes('input-control')
 
 
