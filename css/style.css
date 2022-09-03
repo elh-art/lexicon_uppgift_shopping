@@ -897,11 +897,6 @@ body {
 
   }
 
-  .signup-signin .input-control.error small {
-    visibility: visible;
-    color: var(--color-outofstock);
-  }
-
     .signup-signin .input-control.validated input {   
       box-shadow: 2px 2px var(--color-instock); 
     }
@@ -909,10 +904,6 @@ body {
     .signup-signin .input-control.validated i.fa-check-circle {   
       visibility: visible;
       color: var(--color-instock);
-    }
-
-    .signup-signin .input-control.error input {    
-      border: 2px solid var(--color-outofstock);
     }
 
   .signup-signin input {
